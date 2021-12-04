@@ -118,7 +118,7 @@ EOF
 cat << EOF > /var/spool/cron/vagrant
 */1 * * * * rsync -a /home/vagrant/.config/unity3d/IronGate/Valheim/worlds/ /home/vagrant/.config/unity3d/IronGate/Valheim/worlds-backup
 
-0 6 * * * /home/vagrant/update_valheim_server
+0 13 * * * /home/vagrant/update_valheim_server
 EOF
 
 echo ""
