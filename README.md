@@ -1,4 +1,4 @@
-# Build and Run a Private Valheim Dedicated Server
+# Build and Run a Private Valheim Dedicated Linux Server
 Everything needed to install and run a private Valheim dedicated server to a Linux virtual machine running inside of Windows on your local network.
 
 ## Instructions
