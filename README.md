@@ -19,7 +19,7 @@ Everything needed to install and run a private Valheim dedicated server to a Lin
 * From a command prompt, in the cloned root folder, type `vagrant up`, and follow any instructions. This will create the Linux server in VirtualBox, and will power it up as a virtual machine on your private local network. This will also install updates, etc., and scripts you will use to install, start, stop and update your Valheim server.
 * When that completes, type the command `vagrant ssh` to log in to your Valheim server. **Note:** if this fails, you can open VirtualBox, then select your Valheim Server instance (which should be running by now), then click the big green `Show` arrow at the top, which will launch a window for you to log in to. Log in as `vagrant`, using the password `vagrant`. Either way should take you to your Valheim Linux home folder (`/home/vagrant`).
 * From there, type `./install_steam`. This will install all remaining things needed to create your Valheim server (under `/home/vagrant/valheim`), and will start the server automatically.
-* From your Valheim server home directory (`/home/vagrant`), you can use the following commands at any time:
+* From your vagrant account home directory (`/home/vagrant`), you can use the following commands at any time:
   * `./stop_valheim_server` to stop the Valheim server.
   * `./start_valheim_server` to start the Valheim server (if it stopped for any reason).
   * `./update_valheim_server` to update your Valheim server software (this command is set to run automatically, however, every day at 6 am).
