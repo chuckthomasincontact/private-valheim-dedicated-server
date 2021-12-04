@@ -24,6 +24,6 @@ Everything needed to install and run a private Valheim dedicated server to a Lin
   * `./start_valheim_server` to start the Valheim server (if it stopped for any reason).
   * `./update_valheim_server` to update your Valheim server software (this command is set to run automatically, however, every day at 6 am).
   * `sudo systemctl status valheim` to see if the Valheim server is currently running or not.
-  `./power_off` to shutdown the virtual Linux machine and power it off (use VirtualBox to restart it by right clicking on the virtual machine and clicking `Start`, then `Headless Start`, which will automatically restart your Valheim server as well).
+  * `./power_off` to shutdown the virtual Linux machine and power it off (use VirtualBox to restart it by right clicking on the virtual machine and clicking `Start`, then `Headless Start`, which will automatically restart your Valheim server as well).
 * If you ever need to wipe out the virtual machine and start over, from a Windows command prompt (and from the root of the cloned directory), simply type the command `vagrant destroy --force`. You can always rebuild the server quickly using `vagrant up` again.
 * Lastly, your worlds are automatically backed up every minute the virtual machine is running (to `/home/vagrant/.conf/unity3d/IronGate/Valheim/worlds-backup`). You can restore your worlds any time by typing the command `rsync -a /home/vagrant/.conf/unity3d/IronGate/Valheim/worlds-backup/ /home/vagrant/.conf/unity3d/IronGate/Valheim/worlds` from your vagrant home directory.
