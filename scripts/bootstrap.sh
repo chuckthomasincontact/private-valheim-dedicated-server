@@ -70,14 +70,14 @@ cat << EOF > /home/vagrant/update_valheim_server
 echo "Stopping Valheim server..."
 sudo systemctl stop valheim
 echo "Backing up Valheim worlds..."
-rsync -a /home/vagrant/.config/unity3d/IronGate/Valheim/worlds/ /home/vagrant/.config/unity3d/IronGate/Valheim/worlds-backup
+rsync -a /home/vagrant/.config/unity3d/IronGate/Valheim/worlds_local/ /home/vagrant/.config/unity3d/IronGate/Valheim/worlds_local-backup
 echo "Backing up Valheim server start script..."
 cp /home/vagrant/valheim/start_server.sh /home/vagrant/start_server.sh.bak
 steamcmd +force_install_dir /home/vagrant/valheim +login anonymous +app_update 896660 validate +exit
 echo "Restoring Valheim start script..."
 cp /home/vagrant/start_server.sh.bak /home/vagrant/valheim/start_server.sh
 echo "Restoring Valheim worlds..."
-rsync -a /home/vagrant/.config/unity3d/IronGate/Valheim/worlds-backup/ /home/vagrant/.config/unity3d/IronGate/Valheim/worlds
+rsync -a /home/vagrant/.config/unity3d/IronGate/Valheim/worlds_local-backup/ /home/vagrant/.config/unity3d/IronGate/Valheim/worlds_local
 /home/vagrant/start_valheim_server
 EOF
 
